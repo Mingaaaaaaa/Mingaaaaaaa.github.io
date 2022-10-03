@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Alplune">
+    
+    <title>
+        
+            使用CSS和JS实现灵动岛动画 |
+        
+        Alplune
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/meico.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/me.jpg","favicon":"/images/meico.ico","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"我们穷，只此一生青春."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/me.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+                Alplune
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                LINKS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">LINKS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">使用CSS和JS实现灵动岛动画</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/me.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Alplune</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-10-03 17:15:51</span>
+        <span class="mobile">2022-10-03 17:15</span>
+    </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.8k Words</span>
+        </span>
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h3 id="使用-CSS-和-JavaScript-实现-iPhone-14-Pro-“灵动岛”-动画"><a href="#使用-CSS-和-JavaScript-实现-iPhone-14-Pro-“灵动岛”-动画" class="headerlink" title="使用 CSS 和 JavaScript 实现 iPhone 14 Pro “灵动岛” 动画"></a>使用 <strong>CSS</strong> 和 <strong>JavaScript</strong> 实现 iPhone 14 Pro “灵动岛” 动画</h3><hr>
+<h4 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h4><p>在我十八岁的最后一天 9.8 号，苹果公司召开秋季新品发布会，推出了 iPhone 14 等一系列产品。</p>
+<img src="https://pic2.zhimg.com/50/v2-2776d3c484841cca94a97df022c6d64e_720w.webp?source=1940ef5c" alt="动图" style="zoom:50%;" />
+
+<p>和大家一样，第一眼看到的时候我也觉得很惊艳，这丝滑带来的高级感，好灵动 😮！觉得厨子真是巧夺天工。作为一名前端学习者，我最感兴趣的当然是灵动岛动画的实现。经过一定的了解和学习后，那么让我们进入今天的主题，如何用 CSS 和 Javascript 来浅浅灵动一下。</p>
+<hr>
+<h4 id="相关的前端知识"><a href="#相关的前端知识" class="headerlink" title="相关的前端知识"></a>相关的前端知识</h4><p>本次分享会涉及前端三大件：</p>
+<ol>
+<li><strong>HTML</strong> 定义了网页的内容</li>
+<li><strong>CSS</strong> 描述了网页的布局</li>
+<li><strong>JavaScript</strong> 控制了网页的行为</li>
+</ol>
+<hr>
+<h4 id="让我们开始吧"><a href="#让我们开始吧" class="headerlink" title="让我们开始吧!"></a>让我们开始吧!</h4><p>首先我们先用 HTML 和 CSS 做出手机的静态页面</p>
+<p>HTML 代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./style.css&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;iphone14Pro&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;dynamic-island&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>CSS 代码</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.iphone14Pro</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">974px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">876px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">https://www.apple.com.cn/v/iphone-14-pro/a/images/overview/dynamic-island/dynamic_hw__btl4fomgspyu_large.png</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.dynamic-island</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">320px</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">72px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">72px</span> auto <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: red;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">40px</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line">此处因为类名为dynamic-island的<span class="selector-tag">div</span>内没有内容，所以用<span class="selector-pseudo">::before</span></span><br><span class="line">  和<span class="selector-pseudo">::after</span>没有区别</span><br><span class="line">  <span class="selector-class">.dynamic-island</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot; &quot;</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#272729</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样我们就得到了半部 <strong>iPhone 14Pro</strong>啦！(bushi)</p>
+<p><img src="https://cdn.staticaly.com/gh/Mingaaaaaaa/PictureBed@master/20221003/iphone14.1erludnkc2ww.webp" alt="image-20220929230637769"></p>
+<p>距离灵动岛只需要一点点 <strong>CSS</strong> 和 <strong>JS</strong> 就可以啦 😁</p>
+<hr>
+<h4 id="一些-Web-动画的知识"><a href="#一些-Web-动画的知识" class="headerlink" title="一些 Web 动画的知识"></a><strong>一些 Web 动画的知识</strong></h4><p>目前 web 动画在实现时主要有两种方式：<strong>CSS</strong>/ <strong>JS</strong></p>
+<p><strong>但是独立使用任何一个都不是最好的解决方案</strong></p>
+<p>只用 CSS3 时，我们不好控制整个动画进程，如简单的点击触发动画，循环轮播整套动画等。</p>
+<p>只用 JS ，由于 JS 单线程的特性，所以在动画渲染时，性能不如 CSS3，可能出现不流畅情况。</p>
+<hr>
+<h5 id="在-CSS3-中，也有两种实现灵动岛这样的过渡动画的方法：-animation-和-transition"><a href="#在-CSS3-中，也有两种实现灵动岛这样的过渡动画的方法：-animation-和-transition" class="headerlink" title="在 CSS3 中，也有两种实现灵动岛这样的过渡动画的方法： animation 和 transition"></a><strong>在 CSS3 中，也有两种实现灵动岛这样的过渡动画的方法： animation 和 transition</strong></h5><h5 id="animation-属性"><a href="#animation-属性" class="headerlink" title="animation 属性"></a><strong>animation 属性</strong></h5><p>animatio 是很多属性的简写，我们简单介绍了解一下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">animation</span>: name duration timing-function delay iteration-count direction</span><br><span class="line">  fill-mode;</span><br></pre></td></tr></table></figure>
+
+<p><strong><code>name:</code></strong> 代表一个由<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes"><code>@keyframes</code></a>定义的动画序列的名字</p>
+<p><strong><code>duration ：</code></strong> 动画持续时间</p>
+<p><strong><code>timing-function ：</code></strong> 定义动画在每一动画周期中执行的节奏：<a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1164y127US/?spm_id_from=autoNext&vd_source=3c6e5052ad6b73e6b1512eff4c7600d6" >CSS ease 各种效果的区别（ease 与 ease-in-out 的区别）_哔哩哔哩_bilibili<i class="fas fa-external-link-alt"></i></a></p>
+<p><strong><code>delay ：</code></strong> 动画开始前的延迟时间</p>
+<p><strong><code>iteration-count:</code></strong> 动画播放次数</p>
+<p><strong><code>direction：</code></strong> 指示动画是否反向播放</p>
+<p><strong><code>fill-mode：</code></strong> 设置动画在执行之前和之后对应的样式选择</p>
+<h5 id="transition-属性"><a href="#transition-属性" class="headerlink" title="transition 属性"></a><strong>transition 属性</strong></h5><p>transition 也是是很多属性的简写，我们简单介绍了解一下：</p>
+<p><strong><code>transition-property:</code></strong> 指定应用过渡属性的名称, 默认为 all</p>
+<p><strong><code>transition-duration：</code></strong> 过度动画的持续时间</p>
+<p><strong><code>transition-timing-function：</code></strong> 和上面的 timing-function 类似</p>
+<p><strong><code>transition-delay：</code></strong> 和上面的 delay 类似</p>
+<p>下面我们会分别使用这两个属性来实现动画效果</p>
+<hr>
+<h4 id="灵动岛的具体实现"><a href="#灵动岛的具体实现" class="headerlink" title="灵动岛的具体实现"></a>灵动岛的具体实现</h4><p>我们今天简单实现下面四个常用的动画效果</p>
+<h5 id="1-后台有音乐，倒计时，开热点，打电话等活动时，灵动岛变成长条"><a href="#1-后台有音乐，倒计时，开热点，打电话等活动时，灵动岛变成长条" class="headerlink" title="1.后台有音乐，倒计时，开热点，打电话等活动时，灵动岛变成长条"></a>1.后台有音乐，倒计时，开热点，打电话等活动时，灵动岛变成长条</h5><p>① 我们先用 <strong>transition</strong> 属性来实现<br>只需要在灵动岛的 CSS 上加上一个 transition 属性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transition</span>:    width    <span class="built_in">cubic-bezier</span>(<span class="number">0.3</span>, <span class="number">2</span>, <span class="number">1.0</span>, <span class="number">0.9</span>)  <span class="number">0.8s</span>;</span><br><span class="line">	<span class="comment">/*  灵动岛宽度变化时 遵循上面这个贝塞尔曲线函数  并在0.8s内完成 */</span></span><br><span class="line"></span><br><span class="line">然后我们用鼠标停在灵动岛模拟后台有活动</span><br><span class="line"><span class="selector-class">.dynamic-island</span><span class="selector-pseudo">:hover</span> &#123;<span class="attribute">width</span>: <span class="number">50vw</span>;&#125;</span><br><span class="line"> 让我们看看效果</span><br></pre></td></tr></table></figure>
+
+<p>​ ② 我们用 <strong>animation</strong> 属性来实现</p>
+<p>​ 因为是给鼠标悬停时加动画，animation 的属性加在 hover 的伪类选择器上</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.dynamic-island</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: long <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">  <span class="comment">/*  当鼠标停在灵动岛上，触发名为long的动画，</span></span><br><span class="line"><span class="comment">              0.8s内完成   且结束后定在最后一帧*/</span></span><br><span class="line">&#125;</span><br><span class="line">下面我们定义long 的动画 <span class="keyword">@keyframes</span> long &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">60%</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50vw</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">80%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.04</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50vw</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们不难发现，要让动画有 “灵动感” ，动画的结尾往往表现出一种”超过预期大小，然后又缩回“ 的效果，在一伸一缩之中给了观众灵动的感觉。</p>
+<h5 id="对比-transition-和-animation"><a href="#对比-transition-和-animation" class="headerlink" title="对比 transition 和 animation"></a>对比 transition 和 animation</h5><p>他们虽然都能做出“灵动感”，但是前者的实现会相对困难一些，虽然代码看起来简洁，但是贝塞尔曲线来描述理想的动画并没有直接用 animation 的定义关键帧写起来直观~</p>
+<p>所以下面的动画效果都用 animation 实现（肯定不是我偷懒 🙃）</p>
+<hr>
+<h5 id="2-后台同时有两个活动的时候，灵动岛会分成两个部分（三个以上只显示两个）"><a href="#2-后台同时有两个活动的时候，灵动岛会分成两个部分（三个以上只显示两个）" class="headerlink" title="2.后台同时有两个活动的时候，灵动岛会分成两个部分（三个以上只显示两个）"></a>2.后台同时有两个活动的时候，灵动岛会分成两个部分（三个以上只显示两个）</h5><p>​ 我们用点击灵动岛给灵动岛加类名的方式，让灵动岛在不同动画间切换</p>
+<p>​ 灵动岛分成两部分的原理是把里面藏着的一个小球弹出，本身也做一个放大缩小的动感</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.divide</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: divide-left <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> divide-left &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">40%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.divide</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: divide-right <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> divide-right &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">40%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="attribute">right</span>: -<span class="number">100px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="3-关掉只剩一个后台任务时，两部分融合"><a href="#3-关掉只剩一个后台任务时，两部分融合" class="headerlink" title="3.关掉只剩一个后台任务时，两部分融合"></a>3.关掉只剩一个后台任务时，两部分融合</h5><p>与分开成两部分类似，逆过程</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.fusion</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: fusion-left <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> fusion-left &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">40%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.fusion</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: fusion-right <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> fusion-right &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">    <span class="attribute">right</span>: -<span class="number">100px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">40%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="4-长按唤出小组件的状态"><a href="#4-长按唤出小组件的状态" class="headerlink" title="4.长按唤出小组件的状态"></a>4.长按唤出小组件的状态</h5><p>原理是把灵动岛变宽变长，小圆球设置为 display:none</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bigger</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: bigger <span class="number">800ms</span> ease-in-out forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> bigger &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">60%</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">81vw</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">100px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">80%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1.04</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">81vw</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.bigger</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="JS-代码实现"><a href="#JS-代码实现" class="headerlink" title="JS 代码实现"></a>JS 代码实现</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> dynamicIsland = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.dynamic-island&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> index = <span class="number">0</span>;</span><br><span class="line">animationList = [<span class="string">&quot;long&quot;</span>, <span class="string">&quot;normal&quot;</span>, <span class="string">&quot;divide&quot;</span>, <span class="string">&quot;fusion&quot;</span>, <span class="string">&quot;bigger&quot;</span>, <span class="string">&quot;reset&quot;</span>];</span><br><span class="line"></span><br><span class="line">dynamicIsland.<span class="title function_">addEventListener</span>(<span class="string">&quot;click&quot;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (index &lt;= animationList.<span class="property">length</span> - <span class="number">1</span>) &#123;</span><br><span class="line">      dynamicIsland.<span class="property">classList</span>.<span class="title function_">add</span>(animationList[index]);</span><br><span class="line">      index++;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      index = <span class="number">0</span>;</span><br><span class="line">      dynamicIsland.<span class="property">classList</span>.<span class="title function_">remove</span>(</span><br><span class="line">        <span class="string">&quot;long&quot;</span>,</span><br><span class="line">        <span class="string">&quot;normal&quot;</span>,</span><br><span class="line">        <span class="string">&quot;divide&quot;</span>,</span><br><span class="line">        <span class="string">&quot;fusion&quot;</span>,</span><br><span class="line">        <span class="string">&quot;bigger&quot;</span>,</span><br><span class="line">        <span class="string">&quot;reset&quot;</span></span><br><span class="line">      );</span><br><span class="line">      dynamicIsland.<span class="property">classList</span>.<span class="title function_">add</span>(animationList[index]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, <span class="number">100</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>iPhone 14 Pro 好不好用，灵动岛的实际体验到底好不好，我并没有资格评价(没用过）</p>
+<p>但是灵动岛这种新颖的交互方式和大胆创新的勇气，都值得我们学习</p>
+<p>好了今天分享就到这里，相信大家就算没有买 iPhone 14，也灵动了一把 😊。</p>
+<p>代码地址：<a class="link"   target="_blank" rel="noopener" href="https://github.com/Mingaaaaaaa/Dynamic-Island" >Mingaaaaaaa/Dynamic-Island (github.com)<i class="fas fa-external-link-alt"></i></a></p>
+
+        </div>
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/05/22/c%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%91%A8/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">c语言程序设计周</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Alplune</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-CSS-%E5%92%8C-JavaScript-%E5%AE%9E%E7%8E%B0-iPhone-14-Pro-%E2%80%9C%E7%81%B5%E5%8A%A8%E5%B2%9B%E2%80%9D-%E5%8A%A8%E7%94%BB"><span class="nav-number">1.</span> <span class="nav-text">使用 CSS 和 JavaScript 实现 iPhone 14 Pro “灵动岛” 动画</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">背景：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">相关的前端知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A9%E6%88%91%E4%BB%AC%E5%BC%80%E5%A7%8B%E5%90%A7"><span class="nav-number">1.3.</span> <span class="nav-text">让我们开始吧!</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B-Web-%E5%8A%A8%E7%94%BB%E7%9A%84%E7%9F%A5%E8%AF%86"><span class="nav-number">1.4.</span> <span class="nav-text">一些 Web 动画的知识</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9C%A8-CSS3-%E4%B8%AD%EF%BC%8C%E4%B9%9F%E6%9C%89%E4%B8%A4%E7%A7%8D%E5%AE%9E%E7%8E%B0%E7%81%B5%E5%8A%A8%E5%B2%9B%E8%BF%99%E6%A0%B7%E7%9A%84%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A-animation-%E5%92%8C-transition"><span class="nav-number">1.4.1.</span> <span class="nav-text">在 CSS3 中，也有两种实现灵动岛这样的过渡动画的方法： animation 和 transition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#animation-%E5%B1%9E%E6%80%A7"><span class="nav-number">1.4.2.</span> <span class="nav-text">animation 属性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#transition-%E5%B1%9E%E6%80%A7"><span class="nav-number">1.4.3.</span> <span class="nav-text">transition 属性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%81%B5%E5%8A%A8%E5%B2%9B%E7%9A%84%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.5.</span> <span class="nav-text">灵动岛的具体实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E5%90%8E%E5%8F%B0%E6%9C%89%E9%9F%B3%E4%B9%90%EF%BC%8C%E5%80%92%E8%AE%A1%E6%97%B6%EF%BC%8C%E5%BC%80%E7%83%AD%E7%82%B9%EF%BC%8C%E6%89%93%E7%94%B5%E8%AF%9D%E7%AD%89%E6%B4%BB%E5%8A%A8%E6%97%B6%EF%BC%8C%E7%81%B5%E5%8A%A8%E5%B2%9B%E5%8F%98%E6%88%90%E9%95%BF%E6%9D%A1"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.后台有音乐，倒计时，开热点，打电话等活动时，灵动岛变成长条</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94-transition-%E5%92%8C-animation"><span class="nav-number">1.5.2.</span> <span class="nav-text">对比 transition 和 animation</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E5%90%8E%E5%8F%B0%E5%90%8C%E6%97%B6%E6%9C%89%E4%B8%A4%E4%B8%AA%E6%B4%BB%E5%8A%A8%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E7%81%B5%E5%8A%A8%E5%B2%9B%E4%BC%9A%E5%88%86%E6%88%90%E4%B8%A4%E4%B8%AA%E9%83%A8%E5%88%86%EF%BC%88%E4%B8%89%E4%B8%AA%E4%BB%A5%E4%B8%8A%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%A4%E4%B8%AA%EF%BC%89"><span class="nav-number">1.5.3.</span> <span class="nav-text">2.后台同时有两个活动的时候，灵动岛会分成两个部分（三个以上只显示两个）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E5%85%B3%E6%8E%89%E5%8F%AA%E5%89%A9%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E6%97%B6%EF%BC%8C%E4%B8%A4%E9%83%A8%E5%88%86%E8%9E%8D%E5%90%88"><span class="nav-number">1.5.4.</span> <span class="nav-text">3.关掉只剩一个后台任务时，两部分融合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E9%95%BF%E6%8C%89%E5%94%A4%E5%87%BA%E5%B0%8F%E7%BB%84%E4%BB%B6%E7%9A%84%E7%8A%B6%E6%80%81"><span class="nav-number">1.5.5.</span> <span class="nav-text">4.长按唤出小组件的状态</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JS-%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.6.</span> <span class="nav-text">JS 代码实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">1.7.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
